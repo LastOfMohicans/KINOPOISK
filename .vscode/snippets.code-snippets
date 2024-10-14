@@ -1,0 +1,446 @@
+{
+	// Place your GALLERY workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"PHP Start": {
+		"scope": "html, php",
+		"prefix": "ph",
+		"body": [
+			"<?php $1 ?>"
+		],
+		"description": "Start"
+	},
+	"PHP add": {
+		"scope": "html, php",
+		"prefix": "hp",
+		"body": [
+			"<?php $1"
+		],
+		"description": "Add php"
+	},
+	"$_SESSION": {
+		"scope": "php",
+		"prefix": "ss",
+		"body": [
+			"$$_SESSION['$1']"
+		],
+		"description": "$_SESSION"
+	},
+	"$_COOKIE": {
+		"scope": "php",
+		"prefix": "ck",
+		"body": [
+			"$$_COOKIE['$1']"
+		],
+		"description": "$_COOKIE"
+	},
+	"Var Dump": {
+		"scope": "php",
+		"prefix": "vd",
+		"body": [
+			"var_dump($1);"
+		],
+		"description": "var_dump"
+	},
+	"Print_r": {
+		"scope": "php",
+		"prefix": "pr",
+		"body": [
+			"print_r($1);"
+		],
+		"description": "print_r"
+	},
+	"require": {
+		"scope": "php",
+		"prefix": "rq",
+		"body": [
+			"require __DIR__ . '$1';"
+		],
+		"description": "require"
+	},
+	"require_once": {
+		"scope": "php",
+		"prefix": "rqo",
+		"body": [
+			"require_once __DIR__ . '$1';"
+		],
+		"description": "require_once"
+	},
+	"include": {
+		"scope": "php",
+		"prefix": "in",
+		"body": [
+			"include __DIR__ . '$1';"
+		],
+		"description": "include"
+	},
+	"$_POST": {
+		"scope": "php",
+		"prefix": "ps",
+		"body": [
+			"$$_POST['$1']"
+		],
+		"description": "$_POST"
+	},
+	"$_GET": {
+		"scope": "php",
+		"prefix": "gt",
+		"body": [
+			"$$_GET['$1']"
+		],
+		"description": "$_GET"
+	},
+	"$_FILES": {
+		"scope": "php",
+		"prefix": "fs",
+		"body": [
+			"$$_FILES['$1']"
+		],
+		"description": "$_FILES"
+	},
+	"HEADER": {
+		"scope": "php",
+		"prefix": "hd",
+		"body": [
+			"header('Location: ');"
+		],
+		"description": "header"
+	},
+	"DIR": {
+		"scope": "php",
+		"prefix": "dr",
+		"body": [
+			"__DIR__"
+		],
+		"description": "__DIR__"
+	},
+	"FUNCTION": {
+		"scope": "php",
+		"prefix": "fn",
+		"body": [
+			"function $1()",
+			"{",
+			" $2",
+			"}"
+		],
+		"description": "FUNCTION"
+	},
+	"INTERFACE": {
+		"scope": "php",
+		"prefix": "inf",
+		"body": [
+			"interface $1",
+			"{",
+			" $2",
+			"}"
+		],
+		"description": "INTERFACE"
+	},
+	"ASSERT": {
+		"scope": "php",
+		"prefix": "as",
+		"body": [
+			"assert($1);"
+		],
+		"description": "ASSERT"
+	},
+	"EMPTY": {
+		"scope": "php",
+		"prefix": "ey",
+		"body": [
+			"empty($1)"
+		],
+		"description": "EMPTY"
+	},
+	"ISSET": {
+		"scope": "php",
+		"prefix": "is",
+		"body": [
+			"isset($1)"
+		],
+		"description": "ISSET"
+	},
+	"PUBLIC": {
+		"scope": "php",
+		"prefix": "pb",
+		"body": [
+			"public $1"
+		],
+		"description": "PUBLIC"
+	},
+	"PROTECTED": {
+		"scope": "php",
+		"prefix": "pt",
+		"body": [
+			"protected $1"
+		],
+		"description": "PROTECTED"
+	},
+	"PRIVATE": {
+		"scope": "php",
+		"prefix": "pv",
+		"body": [
+			"private $1"
+		],
+		"description": "PRIVATE"
+	},
+	"STATIC": {
+		"scope": "php",
+		"prefix": "st",
+		"body": [
+			"static $1"
+		],
+		"description": "STATIC"
+	},
+	"ABSTRACT": {
+		"scope": "php",
+		"prefix": "ab",
+		"body": [
+			"abstract $1"
+		],
+		"description": "ABSTRACT"
+	},
+	"MOVE_UPLOADED_FILE": {
+		"scope": "php",
+		"prefix": "muf",
+		"body": [
+			"move_uploaded_file($$file['tmp_name'], __DIR__ . '' . $$file['name']);"
+		],
+		"description": "MOVE_UPLOADED_FILE"
+	},
+	"FILE_PUT_CONTENTS": {
+		"scope": "php",
+		"prefix": "fpc",
+		"body": [
+			"file_put_contents($$path, $$data, FILE_APPEND);"
+		],
+		"description": "FILE_PUT_CONTENTS"
+	},
+	"FILE": {
+		"scope": "php",
+		"prefix": "fl",
+		"body": [
+			"file($path, FILE_IGNORE_NEW_LINES);$1"
+		],
+		"description": "FILE"
+	},
+	"RETURN": {
+		"scope": "php",
+		"prefix": "re",
+		"body": [
+			"return $1;"
+		],
+		"description": "RETURN"
+	},
+	"IMPLODE": {
+		"scope": "php",
+		"prefix": "im",
+		"body": [
+			"implode('$1', $$data)"
+		],
+		"description": "IMPLODE"
+	},
+	"EXPLODE": {
+		"scope": "php",
+		"prefix": "ex",
+		"body": [
+			"explode('$1', $$data)"
+		],
+		"description": "EXPLODE"
+	},
+	"CLASS": {
+		"scope": "php",
+		"prefix": "ca",
+		"body": [
+			"class $1",
+			"{",
+			"  $2",
+			"}"
+		],
+		"description": "CLASS"
+	},
+	"TRAIT": {
+		"scope": "php",
+		"prefix": "tr",
+		"body": [
+			"trait $1",
+			"{",
+			"  $2",
+			"}"
+		],
+		"description": "TRAIT"
+	},
+	"CONSTRUCTOR": {
+		"scope": "php",
+		"prefix": "cn",
+		"body": [
+			"__construct"
+		],
+		"description": "__construct"
+	},
+	"PREPARE": {
+		"scope": "php",
+		"prefix": "pp",
+		"body": [
+			"prepare($1)"
+		],
+		"description": "prepare()"
+	},
+	"EXECUTE": {
+		"scope": "php",
+		"prefix": "eu",
+		"body": [
+			"execute($1);"
+		],
+		"description": "execute()"
+	},
+	"CATCH": {
+		"scope": "php",
+		"prefix": "cat",
+		"body": [
+			"catch (\\Exception $$ex) {",
+			"echo 'Неизвестная ошибка!!!' . $$ex->getMessage($1);",
+			"}"
+		],
+		"description": "CATCH"
+	},
+	"FOREACH": {
+		"scope": "html, php",
+		"prefix": "fch",
+		"body": [
+			"<?php foreach ($variable as $key => $value): ?>",
+			"$1",
+			"<?php endforeach; ?>"
+		],
+		"description": "foreach"
+	},
+	"FETCH_ALL": {
+		"scope": "php",
+		"prefix": "fa",
+		"body": [
+			"fetchAll($1)"
+		],
+		"description": "fetchAll()"
+	},
+	"INVOKE": {
+		"scope": "php",
+		"prefix": "inv",
+		"body": [
+			"public function __invoke()",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "__invoke"
+	},
+	"PUBLIC CONSTRUCTOR": {
+		"scope": "php",
+		"prefix": "pbcn",
+		"body": [
+			"public function __construct()",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "__construct"
+	},
+	"PUBLIC FUNCTION": {
+		"scope": "php",
+		"prefix": "pbfn",
+		"body": [
+			"public function $1(): void",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "public function"
+	},
+	"PUBLIC INTERFACE FUNCTION": {
+		"scope": "php",
+		"prefix": "pbif",
+		"body": [
+			"public function $1(): void;",			
+		],
+		"description": "public interface function"
+	},
+	"PROTECTED FUNCTION": {
+		"scope": "php",
+		"prefix": "ptfn",
+		"body": [
+			"protected function $1(): void",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "protected function"
+	},
+	"PRIVATE FUNCTION": {
+		"scope": "php",
+		"prefix": "prfn",
+		"body": [
+			"private function $1(): void",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "private function"
+	},
+	"PUBLIC STATIC FUNCTION": {
+		"scope": "php",
+		"prefix": "pbst",
+		"body": [
+			"public static function $1(): void",
+			"{",
+			"$2",
+			"}"
+		],
+		"description": "public static function"
+	},
+	"ECHO": {
+		"scope": "html, php",
+		"prefix": "eo",
+		"body": [
+			"<?= $1 ?>"
+		],
+		"description": "echo"
+	},
+	"IF": {
+		"scope": "html, php",
+		"prefix": "hif",
+		"body": [
+			"<?php if (condition): ?>",
+			"$1",
+			"<?php endif; ?>"
+		],
+		"description": "IF"
+	},
+	"BLADE TAG": {
+		"scope": "blade ,html, php",
+		"prefix": "bld",
+		"body": [
+			"{{ $1 }}"
+		],
+		"description": "BLADE TAG"
+	},
+	"BLADE TAG !!": {
+		"scope": "blade ,html, php",
+		"prefix": "bl!",
+		"body": [
+			"{{!! $1 !!}}"
+		],
+		"description": "BLADE TAG !!"
+	}
+}
